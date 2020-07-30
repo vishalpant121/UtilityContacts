@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.3" />
+
+            <TextView
+                android:id="@+id/occupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/raleway_bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Plumber" />
+
+            <ImageView
+                android:id="@+id/info_image"
+                android:layout_width="130dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:contentDescription="Tradesman's Image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/default_colorful_placeholder" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/raleway_bold"
+                android:maxWidth="360dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/info_image"
+                tools:text="Some Name" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/raleway_regular"
+                android:maxWidth="360dp"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name"
+                tools:text="lorem gjnaw aslkn walken alskn alkkndalkse alke alk alsk da aldn al f  alnd" />
+
+            <TextView
+                android:id="@+id/tv_av_hrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/raleway_regular"
+                android:maxWidth="360dp"
+                android:textColor="@color/black"
+                android:text="Availability from 8 a.m. to 8 p.m."
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="Phone : "
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@id/guideline30"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_av_hrs" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:autoLink="phone"
+                android:linksClickable="true"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_phone"
+                app:layout_constraintStart_toEndOf="@+id/guideline30"
+                app:layout_constraintTop_toTopOf="@+id/tv_phone"
+                tools:text="593929292" />
+
+            <TextView
+                android:id="@+id/tv_alt_phone"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:text="Alternate Phone : "
+                android:textColor="@color/black"
+                android:textAlignment="textEnd"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@id/guideline30"
+                app:layout_constraintHorizontal_bias="0.677"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_phone" />
+
+            <TextView
+                android:id="@+id/alt_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:autoLink="phone"
+                android:linksClickable="true"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_alt_phone"
+                app:layout_constraintStart_toEndOf="@+id/guideline30"
+                app:layout_constraintTop_toTopOf="@+id/tv_alt_phone"
+                tools:text="9392929191" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/call_phone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/call_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="40dp"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toEndOf="@+id/phone"
+                app:layout_constraintTop_toTopOf="@+id/phone" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/call_alt_phone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="40dp"
+                app:layout_constraintHorizontal_bias="1"
+                android:src="@drawable/call_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/alt_phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/alt_phone"
+                app:layout_constraintTop_toTopOf="@+id/alt_phone" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
