@@ -12,21 +12,11 @@ App to store contact details of Tradesman (plumber, electrician etc.) locationwi
 {
     "base": [
         {
-            "name": "Deepak",
-            "phone": "9392949291",
-            "occ": "occ2",
-            "loc": "Halwani",
-            "altPhone": "929919111",
-            "address": "Some address",
-            "from": "10 a.m.",
-            "to": "8 p.m."
-        },
-        {
-            "name": "Raman",
-            "phone": "9392949291",
-            "occ": "occ1",
-            "altPhone": "929919111",
-            "loc": "Kathgodam",
+            "name": "name",
+            "phone": "987654321",
+            "occ": "plumber",
+            "loc": "Haldwani",
+            "altPhone": "999911111",
             "address": "Some address",
             "from": "10 a.m.",
             "to": "8 p.m."
